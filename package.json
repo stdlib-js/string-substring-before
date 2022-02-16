@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-substring-before",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Return the part of a string before a specified substring.",
   "license": "Apache-2.0",
   "author": {
