@@ -1,0 +1,36 @@
+{
+  "name": "@stdlib/string-substring-before",
+  "version": "0.0.0",
+  "description": "Return the part of a string before a specified substring.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/string-substring-before.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdstring",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "string",
+    "str",
+    "check",
+    "search",
+    "substring",
+    "substr",
+    "before",
+    "match"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
