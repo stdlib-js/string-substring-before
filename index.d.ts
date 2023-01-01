@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,24 +16,16 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
-
-var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
 * Returns the part of a string before a specified substring.
 *
-* @param {string} str - input string
-* @param {string} search - search string
-* @throws {TypeError} first argument must be a string
-* @throws {TypeError} second argument must be a string
-* @returns {string} substring
+* @param str - input string
+* @param search - search string
+* @returns substring
 *
 * @example
 * var out = substringBefore( 'beep boop', ' ' );
@@ -51,22 +43,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var out = substringBefore( 'Hello World!', 'XYZ' );
 * // returns 'Hello World!'
 */
-function substringBefore( str, search ) {
-	var idx;
-	if ( !isString( str ) ) {
-		throw new TypeError( format( '0hh3R', str ) );
-	}
-	if ( !isString( search ) ) {
-		throw new TypeError( format( '0hh3L', search ) );
-	}
-	idx = str.indexOf( search );
-	if ( idx === -1 ) {
-		return str;
-	}
-	return str.substring( 0, idx );
-}
+declare function substringBefore( str: string,  search: string ): string;
 
 
 // EXPORTS //
 
-module.exports = substringBefore;
+export = substringBefore;
