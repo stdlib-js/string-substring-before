@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-substring-before/tags). For example,
+
+```javascript
 import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.1.0-esm/index.mjs';
 ```
 
@@ -99,7 +104,7 @@ out = substringBefore( str, 'o' );
 <body>
 <script type="module">
 
-import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.1.0-esm/index.mjs';
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@esm/index.mjs';
 
 var out = substringBefore( 'beep boop', 'p' );
 // returns 'bee'
