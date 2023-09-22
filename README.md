@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-substring-before/tags). For example,
+
+```javascript
 import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.1.0-deno/mod.js';
 ```
 
@@ -94,7 +99,7 @@ out = substringBefore( str, 'o' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.1.0-deno/mod.js';
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@deno/mod.js';
 
 var out = substringBefore( 'beep boop', 'p' );
 // returns 'bee'
