@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@deno/mod.js';
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.2.0-deno/mod.js';
 ```
 
 #### substringBefore( str, search )
@@ -94,7 +94,7 @@ out = substringBefore( str, 'o' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@deno/mod.js';
+import substringBefore from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-before@v0.2.0-deno/mod.js';
 
 var out = substringBefore( 'beep boop', 'p' );
 // returns 'bee'
