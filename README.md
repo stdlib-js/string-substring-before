@@ -45,100 +45,25 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/string-substring-before
-```
 
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var substringBefore = require( '@stdlib/string-substring-before' );
-```
-
-#### substringBefore( str, search )
-
-Returns the part of a string before a specified substring.
-
-```javascript
-var str = 'beep boop';
-var out = substringBefore( str, ' ' );
-// returns 'beep'
-
-out = substringBefore( str, 'o' );
-// returns 'beep b'
-```
-
-</section>
-
-<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">
 
-## Notes
-
--   If a substring is not present in a provided string, the function returns the input string.
--   If provided an empty substring, the function returns an empty string.
-
-</section>
-
-<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
-<section class="examples">
 
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var substringBefore = require( '@stdlib/string-substring-before' );
-
-var out = substringBefore( 'beep boop', 'p' );
-// returns 'bee'
-
-out = substringBefore( 'Hello World!', 'xyz' );
-// returns 'Hello World!'
-
-out = substringBefore( 'Hello World!', '' );
-// returns ''
-
-out = substringBefore( '', 'xyz' );
-// returns ''
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
+
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -156,7 +81,7 @@ npm install -g @stdlib/string-substring-before-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: substring-before [options] --search=<string> [<string>]
@@ -177,7 +102,7 @@ Options:
 
 <section class="notes">
 
-### Notes
+## Notes
 
 -   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
 
@@ -199,7 +124,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ substring-before abcdefg --search d
@@ -242,11 +167,10 @@ boo
 
 <section class="related">
 
-* * *
-
 ## See Also
 
--   <span class="package-name">[`@stdlib/string-substring-before-last`][@stdlib/string/substring-before-last]</span><span class="delimiter">: </span><span class="description">return the part of a string before the last occurrence of a specified substring.</span>
+-   <span class="package-name">[`@stdlib/string-substring-before`][@stdlib/string-substring-before]</span><span class="delimiter">: </span><span class="description">return the part of a string before a specified substring.</span>
+-   <span class="package-name">[`@stdlib/string-substring-before-cli-last`][@stdlib/string/substring-before-last]</span><span class="delimiter">: </span><span class="description">return the part of a string before the last occurrence of a specified substring.</span>
 -   <span class="package-name">[`@stdlib/string-substring-after`][@stdlib/string/substring-after]</span><span class="delimiter">: </span><span class="description">return the part of a string after a specified substring.</span>
 -   <span class="package-name">[`@stdlib/string-substring-after-last`][@stdlib/string/substring-after-last]</span><span class="delimiter">: </span><span class="description">return the part of a string after the last occurrence of a specified substring.</span>
 
@@ -267,7 +191,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -290,8 +214,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/string-substring-before.svg
-[npm-url]: https://npmjs.org/package/@stdlib/string-substring-before
+[npm-image]: http://img.shields.io/npm/v/@stdlib/string-substring-before-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/string-substring-before-cli
 
 [test-image]: https://github.com/stdlib-js/string-substring-before/actions/workflows/test.yml/badge.svg?branch=v0.2.2
 [test-url]: https://github.com/stdlib-js/string-substring-before/actions/workflows/test.yml?query=branch:v0.2.2
